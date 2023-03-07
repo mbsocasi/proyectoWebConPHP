@@ -37,7 +37,7 @@ if(isset($_POST['save'])){
     $data = json_encode($data_array, JSON_PRETTY_PRINT);
     file_put_contents('members.json', $data);
 
-    header('location: index.php');
+    header('location: materiapirma.php');
 }
 
 ?>
@@ -45,7 +45,7 @@ if(isset($_POST['save'])){
     <h1 class="page-header text-center">SISTEMA INVENTARIOS - Materia Prima</h1>
     <div class="row">
         <div class="col-1"></div>
-        <div class="col-8"><a class="btn btn-primary" href="index.php">Atras</a>
+        <div class="col-8"><a class="btn btn-primary" href="materiapirma.php">Atras</a>
         <form method="POST">
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Codigo</label>

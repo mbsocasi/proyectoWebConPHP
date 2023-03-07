@@ -7,18 +7,18 @@
         "fechapro": "2023-03-24",
         "cantpro": "2",
         "unipro": "litros",
-        "proveedor": "Carol Jacome",
+        "proveedor": "Angel Aguirre",
         "preciopro": "1.2"
     },
     {
-        "id": "6406799d55598",
+        "id": "345",
         "nombpro": "harina",
         "descpro": "blanca",
         "marcapro": "harinaya",
         "fechapro": "2023-03-09",
         "cantpro": "6",
         "unipro": "kg",
-        "proveedor": "Carol Jacome",
+        "proveedor": "Steven Oviedo",
         "preciopro": "6.5"
     },
     {
@@ -52,6 +52,17 @@
         "cantpro": "45",
         "unipro": "libras",
         "proveedor": "Carol Jacome",
+        "preciopro": "45"
+    },
+    {
+        "id": "3456",
+        "nombpro": "sefgdhfgh",
+        "descpro": "erty",
+        "marcapro": "ertfgyuj",
+        "fechapro": "2023-03-17",
+        "cantpro": "43",
+        "unipro": "libras",
+        "proveedor": "moises2",
         "preciopro": "45"
     }
 ]

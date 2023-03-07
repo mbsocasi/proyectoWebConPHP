@@ -60,7 +60,6 @@ include('nav.php');
                                     <td>".$row['preciopro']."</td>
                                     <td>
                                         <a href='edit_MP.php?index=".$index."' class='btn btn-success btn-sm'>Edit</a>
-                                        <a href='delete_MP.php?index=".$index."' class='btn btn-danger btn-sm'>Delete</a>
                                     </td>
                                 </tr>
                             ";
