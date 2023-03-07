@@ -1,0 +1,20 @@
+{
+    "0": {
+        "codigo": 1 ,
+        "nombre": "moises",
+        "numero": "R1",
+
+        "materiaprima":[
+            {
+                "codigo": "traer",
+                "nombre": "traer",
+                "cantidad": "ingresar",
+                "unidades": "ingresar",
+                "costo": "traer",
+                "precioTotal": "calcular"                
+            }
+          ]
+        
+    }
+     
+}

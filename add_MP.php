@@ -105,7 +105,7 @@ if(isset($_POST['save'])){
                 <div class="col-sm-10">
                 <select class="form-control" name="proveedor" id="proveedor">
                         <?php
-                            $proveedores = file_get_contents('proveedores.json');
+                            $proveedores = file_get_contents('proveedor.json');
                             $proveedores = json_decode($proveedores, true);
                             foreach($proveedores as $proveedor) {
                                 echo '<option value="' . $proveedor['nombre'] . '">' . $proveedor['nombre'] . '</option>';}

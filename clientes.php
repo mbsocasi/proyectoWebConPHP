@@ -30,7 +30,7 @@ include('../nav.php');
                 <tbody>
                     <?php
                         //fetch data from json
-                        $data = file_get_contents('cliente.json');
+                        $data = file_get_contents('../json/cliente.json');
                         //decode into php array
                         $data = json_decode($data);
  

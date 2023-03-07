@@ -9,7 +9,7 @@
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
           <li><a href="../materiaprima/materiapirma.php"  class="nav-link px-4 link-secondary " >Registro Inventarios</a></li>
           <li><a href="../materiaprima/materiapirma.php" class="nav-link px-3 active">Inventarios M.P</a></li>
-          <li><a   class="nav-link px-3 ">Productos</a></li>
+          <li><a href="../productos/productos.php"  class="nav-link px-3 ">Productos</a></li>
           <li><a href="../proveedores/proveedores.php" class="nav-link px-3 ">Proveedores</a></li>
           <li><a href="../clientes/clientes.php" class="nav-link px-3 ">Clientes</a></li>
           <li><a href="../proveedores/proveedores.php" class="nav-link px-3 ">Orden Produccion</a></li>

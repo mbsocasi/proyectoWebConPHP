@@ -45,11 +45,9 @@ include('../nav.php');
 ?>
 
 <div class="container">
-    <h1 class="page-header text-center">SISTEMA INVENTARIOS - Materia Prima</h1>
+    <h1 class="page-header text-center"> Materia Prima</h1>
 
-    <div class="print-only">
-    <h1 class="page-header text-center">REPORTE - Materia Prima</h1>
-        </div>
+    
 
     <div class="row">
         <div class="col-12">
