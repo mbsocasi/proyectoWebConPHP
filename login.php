@@ -6,7 +6,7 @@ $palabra_secreta = $_POST["palabra_secreta"];
 if ($usuario === $usuario_correcto && $palabra_secreta === $palabra_secreta_correcta) {
     session_start();
     $_SESSION["usuario"] = $usuario;
-    header("Location: clientes/clientes.php");
+    header("Location: clientes.php");
 } else {
     echo "<script>alert('Usuario o contraseña incorrectos'); window.location.href='index.html';</script>";
 }

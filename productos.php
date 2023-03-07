@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php 
-include('../nav.php');
+include('nav.php');
 ?> 
 <br><br>
 <div class="container">
@@ -69,7 +69,7 @@ include('../nav.php');
 $materias_primas = json_decode(file_get_contents('materias_primas.json'), true);
 ?>
 
-<script src="../script_imprimir.js"></script>
+<script src="script_imprimir.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
