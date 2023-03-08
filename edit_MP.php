@@ -50,7 +50,7 @@ if(isset($_POST['save'])){
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Codigo</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="id" name="id" value="<?php echo $row['id']; ?>">
+                    <input type="number" class="form-control" id="id" name="id" value="<?php echo $row['id']; ?>">
                     <span id="error-id" style="color: red;"></span>
                 </div>
             </div>
@@ -106,7 +106,7 @@ if(isset($_POST['save'])){
     <div class="col-sm-10">
         <select class="form-control" name="proveedor" id="proveedor">
             <?php
-                $proveedores = file_get_contents('proveedores.json');
+                $proveedores = file_get_contents('proveedor.json');
                 $proveedores = json_decode($proveedores, true);
                 foreach($proveedores as $proveedor) {
                     echo '<option value="' . $proveedor['nombre'] . '"';

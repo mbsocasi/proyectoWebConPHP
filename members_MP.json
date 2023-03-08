@@ -20,8 +20,7 @@
         "unipro": "kg",
         "proveedor": "moises2",
         "preciopro": "123"
-    }
-    ,
+    },
     {
         "id": "123",
         "nombpro": "sal",
@@ -32,8 +31,7 @@
         "unipro": "kg",
         "proveedor": "moises2",
         "preciopro": "123"
-    }
-    ,
+    },
     {
         "id": "123",
         "nombpro": "azucar",
@@ -44,8 +42,7 @@
         "unipro": "kg",
         "proveedor": "moises2",
         "preciopro": "123"
-    }
-    ,
+    },
     {
         "id": "123",
         "nombpro": "levadura",
@@ -53,8 +50,8 @@
         "marcapro": "cocinero",
         "fechapro": "2023-03-18",
         "cantpro": "123",
-        "unipro": "oz",
-        "proveedor": "moises2",
+        "unipro": "litros",
+        "proveedor": null,
         "preciopro": "123"
     }
 ]

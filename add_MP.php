@@ -51,7 +51,7 @@ if(isset($_POST['save'])){
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Codigo</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="id" name="id"  >
+                    <input type="number" class="form-control" id="id" name="id"  >
                     <span id="error-id" style="color: red;"></span>
                 </div>
             </div>
