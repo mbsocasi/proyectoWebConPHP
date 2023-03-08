@@ -1,81 +1,214 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <title>Añadir Productos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <title>Añadir Productos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 </head>
+
 <body>
-<div class="container">
-    <h1 class="page-header text-center">Añadir Productos</h1>
-    <div class="row">
-        <div class="col-1"></div>
-        
-        <form method="POST">
-            <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Codigo</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="codigo" name="codigo">
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Nombre del cliente</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="nombre" name="nombre">
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Apellido del cliente</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="apellido" name="apellido">
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Direccion</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="direccion" name="direccion">
-                </div>
-            </div>
-            <div class="mb-3 row">
-                <label class="col-sm-2 col-form-label">Telefono</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="telefono" name="telefono">
-                </div>
-            </div>
-            <input type="submit" name="save" value="Guardar" class="btn btn-primary">
-            <div style="margin-left: 20px;display:inline;"><a href="clientes.php">Back</a>
-        </form>
-        </div>
-        <div class="col-5"></div>
-    </div>
-</div>  
+  <?php
+  include('nav.php');
+  ?>
+  <h1 class="page-header text-center">AGREGAR UN NUEVO PRODUCTO</h1>
 
-<?php
-    if(isset($_POST['save'])){
-        //open the json file
-        $data = file_get_contents('cliente.json');
-        $data = json_decode($data);
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <?php
+  if (isset($_POST['save'])) {
+    $data = file_get_contents('productos.json');
+    $data_array = json_decode($data, true);
+
+    $input = [];
+    $input['id'] = intval($_POST['id']);
+    $input['numero'] = $_POST['numero'];
+    $input['nombre'] = $_POST['nombre'];
+
+    $ingredientes = [];
+
+    // $nombres = $_POST['nombpro'];
+    // $cantidades = $_POST['cantidad'];
+    // $precios = $_POST['unipro'];
+
  
-        //data in out POST
-        $input = array(
-            'codigo' => $_POST['codigo'],
-            'nombre' => $_POST['nombre'],
-            'apellido' => $_POST['apellido'],
-            'direccion' => $_POST['direccion'],
-            'telefono' => $_POST['telefono']
 
 
-
-        );
- 
-        //append the input to our array
-        $data[] = $input;
-        //encode back to json
-        $data = json_encode($data, JSON_PRETTY_PRINT);
-        file_put_contents('cliente.json', $data);
- 
-        header('location: clientes.php');
+    foreach ($nombres as $index => $nombreProd) {
+      $nombreProd_parts = explode('|', $nombreProd);
+      $ingrediente = [];
+      $ingrediente['nombpro'] = $nombreProd_parts[0];
+      $ingrediente['unipro'] = $nombreProd_parts[1];
+      $ingrediente['id'] = $nombreProd_parts[2];
+      $ingrediente['preciopro'] = $nombreProd_parts[3];
+      $ingrediente['cantidad'] = intval($cantidades[$index]);
+      $ingredientes[] = $receta;
     }
-?>
+
+    $input['ingredientes'] = $ingredientes;
+
+    $data_array[] = $input;
+    $data = json_encode($data_array, JSON_PRETTY_PRINT);
+    file_put_contents('productos.json', $data);
+
+    header('location: productos.php');
+  }
+
+  ?>
+  <div class="container">
+    <div class="row">
+      <div class="col-8"><a class="btn btn-primary addx" href="productos.php">Atras</a>
+        <form method="post">
+          <label class="col-sm-2 col-form-label" for="id">ID:</label>
+          <input class="form-control" type="text" name="id"><br>
+
+          <label class="col-sm-2 col-form-label" for="numero">Numero:</label>
+          <input class="form-control" type="text" name="numero"><br>
+
+          <label class="col-sm-2 col-form-label" for="nombre">Nombre:</label>
+          <input class="form-control" type="text" name="nombre"><br>
+
+
+
+
+
+
+          <h2>Orden de Produccion</h2>
+          <div id="recetas">
+            <div class="table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Cantidad</th>
+                    <th>Unidad </th>
+                    <th>Precio de ingrediente </th>
+                    <th>Acciones</th>
+                  </tr>
+                </thead>
+                <tbody id="recetas2">
+                  <tr class="receta">
+                    <td>
+                      <div class="form-group">
+                        <select class="form-select" name="nombpro[]" id="nombpro" onchange="actualizarValor(this)">
+                          <option value="">Seleccione....</option>
+                          <?php
+                          $productos = file_get_contents('members.json');
+                          $productos = json_decode($productos, true);
+                          foreach ($productos as $nombreProd) {
+                            echo '<option value="'
+                              . $nombreProd['nombpro'] . '|'
+                              . $nombreProd['unipro'] . '|'
+                              . $nombreProd['id'] . '|'
+                              . $nombreProd['preciopro'] . '|'
+                              . '">' . $nombreProd['nombpro'] . '</option>';
+                          }
+                          ?>
+                        </select>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input class="form-control" type="text" name="cantidad[]">
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input class="form-control valor" type="text" name="unipro[]" readonly>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="form-group">
+                        <input class="form-control valor2" type="text" name="preciopro[]" readonly>
+                      </div>
+                    </td>
+                    <td>
+                      <button class="btn btn-danger" type="button" onclick="borrarReceta(this)">Borrar</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+          <button class="btn btn-secondary addx" type="button" onclick="addReceta()">Agregar Plato</button>
+          <!-- <button class="btn btn-primary addx" type="submit" name="save">Guardar</button>-->
+          <button class="btn btn-primary reporte5" type="submit" name="save">Guardar Producto</button>
+          <script src="script_imprimir.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+          <script>
+            function addReceta() {
+              var receta = document.createElement('tr');
+              receta.className = 'receta';
+              receta.innerHTML = `
+    <td>
+        <div class="form-group">
+        <select class="form-select" name="nombpro[]" id="nombpro"
+                                                onchange="actualizarValor(this)">
+                                                <option value="">Seleccione....</option>
+                                                <?php
+                                                $productos = file_get_contents('members.json');
+                                                $productos = json_decode($productos, true);
+                                                foreach ($productos as $nombreProd) {
+                                                  echo '<option value="'
+                                                    . $nombreProd['nombpro'] . '|'
+                                                    . $nombreProd['unipro'] . '|'
+                                                    . $nombreProd['id'] . '|'
+                                                    . $nombreProd['preciopro'] . '|'
+                                                    . '">' . $nombreProd['nombpro'] . '</option>';
+                                                }
+                                                ?>
+                                            </select>
+        </div>
+    </td>
+    <td>
+        <div class="form-group">
+            <input class="form-control" type="text" name="cantidad[]">
+        </div>
+    </td>
+    <td>
+        <div class="form-group">
+        <input class="form-control valor" type="text" name="unipro[]" readonly>
+        </div>
+    </td>
+    <td>
+        <div class="form-group">
+        <input class="form-control valor2" type="text" name="preciopro[]" readonly>
+        </div>
+        </td>
+    <td>
+        <button class="btn btn-danger" type="button"
+        onclick="borrarReceta(this)">Borrar</button>
+    </td>
+`;
+              document.getElementById('recetas2').appendChild(receta);
+            }
+
+            function borrarReceta(btn) {
+              var fila = btn.parentNode.parentNode;
+              fila.parentNode.removeChild(fila);
+            }
+          </script>
+
 </body>
+
+</html>
+<script>
+  function actualizarValor(select) {
+    var unipro = select.value.split('|')[1];
+    var fila = select.closest('tr');
+    var valorInput = fila.querySelector('.valor');
+    valorInput.value = unipro;
+
+    var preciopro = select.value.split('|')[2];
+    var fila = select.closest('tr');
+    var valorInput = fila.querySelector('.valor2');
+    valorInput.value = preciopro;
+
+  }
+</script>
+</body>
+
 </html>

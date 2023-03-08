@@ -1,3 +1,4 @@
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <header class="navbar p-4 mb-3 border-bottom">
     <div class="container hide-link">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
@@ -12,7 +13,7 @@
           <li><a href="productos.php"  class="nav-link px-3 ">Productos</a></li>
           <li><a href="proveedores.php" class="nav-link px-3 ">Proveedores</a></li>
           <li><a href="clientes.php" class="nav-link px-3 ">Clientes</a></li>
-          <li><a href="proveedores.php" class="nav-link px-3 ">Orden Produccion</a></li>
+          <li><a href="OrdenP.php" class="nav-link px-3 ">Orden Produccion</a></li>
         </ul>
 
         <!--<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">

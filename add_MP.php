@@ -9,6 +9,9 @@
 </head>
 <body>
 <?php
+    include('nav.php');
+    ?>
+<?php
 
 if(isset($_POST['save'])){
     //open the json file
@@ -35,7 +38,7 @@ if(isset($_POST['save'])){
     $data = json_encode($data, JSON_PRETTY_PRINT);
     file_put_contents('members.json', $data);
 
-    header('location: index.php');
+    header('location: materiapirma.php');
     exit;
 }    
 ?>

@@ -1,20 +1,167 @@
-{
-    "0": {
-        "codigo": 1 ,
-        "nombre": "moises",
-        "numero": "R1",
-
-        "materiaprima":[
+[
+    {
+        "id": 1,
+        "numero": "45654",
+        "nombre": "pizza",
+        "costoTotal": 1232,
+        "ingredientes": [
             {
-                "codigo": "traer",
-                "nombre": "traer",
-                "cantidad": "ingresar",
-                "unidades": "ingresar",
-                "costo": "traer",
-                "precioTotal": "calcular"                
+                "id": 1,
+                "nombreing": "harina",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            },
+            {
+                "id": 23,
+                "nombreing": "harina",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
             }
-          ]
-        
+        ]
+    },
+    {
+        "id": 2,
+        "numero": "44354",
+        "nombre": "lasania",
+        "costoTotal": 1232,
+        "ingredientes": [
+            {
+                "id": 234,
+                "nombreing": "harina",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            },
+            {
+                "id": 67,
+                "nombreing": "pan",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            },
+            {
+                "id": 6,
+                "nombreing": "azucar",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "numero": "123",
+        "nombre": "pansito",
+        "costoTotal": 1232,
+        "ingredientes": [
+            {
+                "id": 234,
+                "nombreing": "harina",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            },
+            {
+                "id": 67,
+                "nombreing": "pan",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            },
+            {
+                "id": 6,
+                "nombreing": "azucar",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "numero": "3455",
+        "nombre": "costra",
+        "costoTotal": 1232,
+        "ingredientes": [
+            {
+                "id": 234,
+                "nombreing": "harina",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            },
+            {
+                "id": 67,
+                "nombreing": "pan",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            },
+            {
+                "id": 6,
+                "nombreing": "azucar",
+                "cantidad": 5,
+                "unidad": "kg",
+                "costo": 1.2
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "numero": "",
+        "nombre": [
+            "sal|kg",
+            "sal|kg",
+            "levadura|oz"
+        ],
+        "ingredientes": [
+            null
+        ]
+    },
+    {
+        "id": 0,
+        "numero": "",
+        "nombre": [
+            "sal|kg|123|123|",
+            "arina|kg|123|123|"
+        ],
+        "ingredientes": [
+            null
+        ]
+    },
+    {
+        "id": 123,
+        "numero": "12",
+        "nombre": [
+            "leche|litros|123|12|"
+        ],
+        "ingredientes": [
+            null
+        ]
+    },
+    {
+        "id": 123,
+        "numero": "23",
+        "nombre": [
+            "levadura|oz|123|123|",
+            "leche|litros|123|12|"
+        ],
+        "ingredientes": [
+            null
+        ]
+    },
+    {
+        "id": 1231,
+        "numero": "12",
+        "nombre": "moises",
+        "ingredientes": []
+    },
+    {
+        "id": 987,
+        "numero": "987",
+        "nombre": "Prueba envio",
+        "ingredientes": []
     }
-     
-}
+]
