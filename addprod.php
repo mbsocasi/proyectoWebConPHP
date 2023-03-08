@@ -33,6 +33,7 @@
 
  
 
+        $recetas = [];
 
     foreach ($nombres as $index => $nombreProd) {
       $nombreProd_parts = explode('|', $nombreProd);
