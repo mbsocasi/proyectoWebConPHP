@@ -39,7 +39,7 @@ include('nav.php');
                 <tbody>
                     <?php
                         //fetch data from json
-                        $data = file_get_contents('members.json');
+                        $data = file_get_contents('members_MP.json');
                         //decode into php array
                         $data_array = json_decode($data, true);
 

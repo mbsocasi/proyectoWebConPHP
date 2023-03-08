@@ -10,7 +10,7 @@
 $index = $_GET['index'];
 
 //get json data
-$data = file_get_contents('members.json');
+$data = file_get_contents('members_MP.json');
 $data_array = json_decode($data, true);
 
 //assign the data to selected index
@@ -35,7 +35,7 @@ if(isset($_POST['save'])){
 
     //encode back to json
     $data = json_encode($data_array, JSON_PRETTY_PRINT);
-    file_put_contents('members.json', $data);
+    file_put_contents('members_MP.json', $data);
 
     header('location: materiapirma.php');
 }

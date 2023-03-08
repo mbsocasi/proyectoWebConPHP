@@ -15,7 +15,7 @@
 
 if(isset($_POST['save'])){
     //open the json file
-    $data = file_get_contents('members.json');
+    $data = file_get_contents('members_MP.json');
     $data = json_decode($data, true);
 
     //data in out POST
@@ -36,7 +36,7 @@ if(isset($_POST['save'])){
     $data[] = $input;
     //encode back to json
     $data = json_encode($data, JSON_PRETTY_PRINT);
-    file_put_contents('members.json', $data);
+    file_put_contents('members_MP.json', $data);
 
     header('location: materiapirma.php');
     exit;
