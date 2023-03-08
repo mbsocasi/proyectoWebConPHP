@@ -17,75 +17,99 @@
         ]
     },
     {
-        "id": 123,
-        "numero": "23",
-        "cliente": "moisesadcli",
+        "id": 245,
+        "numero": "76",
+        "cliente": "Angel Aguirre",
         "recetas": [
             {
-                "nombre": "Lasagna|400",
-                "cantidad": 123,
-                "precio": 400
+                "nombre": "Pasta",
+                "cantidad": 9,
+                "precio": 2
             },
             {
-                "nombre": "Pasta|200",
-                "cantidad": 67,
-                "precio": 200
+                "nombre": "Pizza",
+                "cantidad": 4,
+                "precio": 5.5
             }
         ]
     },
     {
-        "id": 123,
-        "numero": "12",
+        "id": 3456,
+        "numero": "46",
+        "cliente": "Carol Jacome",
+        "recetas": [
+            {
+                "nombre": "Pasta",
+                "cantidad": 6,
+                "precio": 5
+            },
+            {
+                "nombre": "Lasagna",
+                "cantidad": 4,
+                "precio": 5.55
+            }
+        ]
+    },
+    {
+        "id": 766,
+        "numero": "777",
+        "cliente": "moisesadcli",
+        "recetas": [
+            {
+                "nombre": "salsa|77",
+                "cantidad": 2,
+                "precio": 77
+            },
+            {
+                "nombre": "pizza|32",
+                "cantidad": 5,
+                "precio": 32
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "numero": "1",
         "cliente": "moises",
         "recetas": [
             {
-                "nombre": "pizza|",
-                "cantidad": 123,
-                "precio": 0
+                "nombre": "salsa|77",
+                "cantidad": 1,
+                "precio": 77
             },
             {
-                "nombre": "pizza|",
-                "cantidad": 1232,
-                "precio": 0
+                "nombre": "pizza|32",
+                "cantidad": 2,
+                "precio": 32
+            }
+        ]
+    },
+    {
+        "id": 757,
+        "numero": "757",
+        "cliente": "moises",
+        "recetas": [
+            {
+                "nombre": "salsa",
+                "cantidad": 1,
+                "precio": 77
+            },
+            {
+                "nombre": "pizza",
+                "cantidad": 2,
+                "precio": 32
             }
         ]
     },
     {
         "id": 0,
-        "numero": "",
-        "cliente": null,
-        "recetas": [
-            {
-                "nombre": "pasta|1232",
-                "cantidad": 123,
-                "precio": 0
-            },
-            {
-                "nombre": "pasta|1232",
-                "cantidad": 434,
-                "precio": 0
-            }
-        ]
-    },
-    {
-        "id": 123,
         "numero": "12",
-        "cliente": "moises",
+        "cliente": "moisesadcli",
         "recetas": [
             {
-                "nombre": "lasania",
-                "cantidad": 123,
-                "precio": 1232
-            },
-            {
-                "nombre": "costra",
-                "cantidad": 123,
-                "precio": 1232
-            },
-            {
-                "nombre": "pansito",
-                "cantidad": 66,
-                "precio": 1232
+                "nombre": "prueba",
+                "cantidad": 456,
+                "precio": 0
             }
         ]
     }

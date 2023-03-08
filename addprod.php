@@ -13,6 +13,7 @@
   ?>
   <h1 class="page-header text-center">AGREGAR UN NUEVO PRODUCTO</h1>
 
+        $recetas = [];
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   <?php
@@ -27,23 +28,21 @@
 
     $ingredientes = [];
 
-    // $nombres = $_POST['nombpro'];
-    // $cantidades = $_POST['cantidad'];
-    // $precios = $_POST['unipro'];
+    $nombres = $_POST['nombpro'];
+    $cantidades = $_POST['cantidad'];
+    $unidades= $_POST['unipro'];
+    $precios = $_POST['preciopro'];
 
- 
-
-        $recetas = [];
-
-    foreach ($nombres as $index => $nombreProd) {
-      $nombreProd_parts = explode('|', $nombreProd);
+    foreach ($nombres as $index => $nombre) {
+      $nombre_parts = explode('|', $nombre);
       $ingrediente = [];
-      $ingrediente['nombpro'] = $nombreProd_parts[0];
-      $ingrediente['unipro'] = $nombreProd_parts[1];
-      $ingrediente['id'] = $nombreProd_parts[2];
-      $ingrediente['preciopro'] = $nombreProd_parts[3];
+      $ingrediente['id'] = intval($nombre_parts[2]);
+      $ingrediente['nombreing']= $nombre_parts[0];
       $ingrediente['cantidad'] = intval($cantidades[$index]);
-      $ingredientes[] = $receta;
+      $ingrediente['unidad'] = $unidades[$index];
+      $ingrediente['costo'] = floatval($precios[$index]);
+
+      $ingredientes[] = $ingrediente;
     }
 
     $input['ingredientes'] = $ingredientes;
@@ -74,7 +73,7 @@
 
 
 
-          <h2>Orden de Produccion</h2>
+          <h2>Ingredientes</h2>
           <div id="recetas">
             <div class="table-responsive">
               <table class="table table-bordered">

@@ -41,6 +41,7 @@
 
                         $index = 0;
                         foreach ($data as $row) {
+                            $costo_total = 0;
                             echo "
                 <tr>
                     <td>" . $row->id . "</td>
@@ -60,6 +61,8 @@
 
 
                             foreach ($row->ingredientes as $ingrediente) {
+                                $total_costo = $ingrediente->cantidad * $ingrediente->costo;
+                                $costo_total += $total_costo;
                                 echo "
                                 <tr>
                                     <td>" . $ingrediente->id . "</td>
@@ -72,7 +75,7 @@
                                 </tr>
                             ";
 
-                                $index++;
+                                
                             }
 
 
@@ -81,10 +84,10 @@
                             </tbody>
                         </table>
                     </td> 
-                    <td>" . $row->costoTotal . "</td>
+                    <td>" . $costo_total  . "</td>
                                                                 
                     <td>
-                         <a href='deleteprod.php?index=" . $index . "' class='btn btn-danger btn-sm'>Eliminar</a>
+                    <a href='deleteprod.php?index=" . $index . "' class='btn btn-danger btn-sm'>Eliminar</a>
                     </td>
                 </tr>
             ";

@@ -1,27 +1,27 @@
+
 [
     {
-        "id": "123",
+        "id": "1",
         "nombpro": "leche",
-        "descpro": "latas de algo",
+        "descpro": "galones",
         "marcapro": "levita",
         "fechapro": "2023-03-19",
-        "cantpro": "12312",
+        "cantpro": "123",
         "unipro": "litros",
-        "proveedor": "moises5",
-        "preciopro": "12"
+        "proveedor": "Angel Aguirre",
+        "preciopro": "1.2"
     },
     {
-        "id": "123",
-        "nombpro": "arina",
-        "descpro": "sacos de arina",
-        "marcapro": "cocinero",
-        "fechapro": "2023-03-18",
-        "cantpro": "123",
+        "id": "345",
+        "nombpro": "harina",
+        "descpro": "blanca",
+        "marcapro": "harinaya",
+        "fechapro": "2023-03-09",
+        "cantpro": "6",
         "unipro": "kg",
-        "proveedor": "moises2",
-        "preciopro": "123"
-    }
-    ,
+        "proveedor": "Steven Oviedo",
+        "preciopro": "6.5"
+    },
     {
         "id": "123",
         "nombpro": "sal",
@@ -47,14 +47,25 @@
     }
     ,
     {
-        "id": "123",
-        "nombpro": "levadura",
-        "descpro": "sacos de arina",
-        "marcapro": "cocinero",
-        "fechapro": "2023-03-18",
-        "cantpro": "123",
-        "unipro": "oz",
+        "id": "64067ab78472b",
+        "nombpro": "sedr",
+        "descpro": "fdh",
+        "marcapro": "ggh",
+        "fechapro": "2023-03-24",
+        "cantpro": "45",
+        "unipro": "libras",
+        "proveedor": "Carol Jacome",
+        "preciopro": "45"
+    },
+    {
+        "id": "3456",
+        "nombpro": "sefgdhfgh",
+        "descpro": "erty",
+        "marcapro": "ertfgyuj",
+        "fechapro": "2023-03-17",
+        "cantpro": "43",
+        "unipro": "libras",
         "proveedor": "moises2",
-        "preciopro": "123"
+        "preciopro": "45"
     }
 ]
