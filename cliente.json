@@ -12,26 +12,5 @@
         "apellido": "socasi",
         "direccion": "nyfjhv",
         "telefono": "0992836492"
-    },
-    "1": {
-        "codigo": "170525",
-        "nombre": "moises",
-        "apellido": "socasi",
-        "direccion": "Cuiendina. Teresa Correa. 1ro De Agosto",
-        "telefono": "0992836492"
-    },
-    "3": {
-        "codigo": "170525",
-        "nombre": "moisesadcli",
-        "apellido": "socasi",
-        "direccion": "Cuiendina. Teresa Correa. 1ro De Agosto",
-        "telefono": "0992836492"
-    },
-    {
-        "codigo": "170525",
-        "nombre": "moisesadcli",
-        "apellido": "socasi",
-        "direccion": "Cuiendina. Teresa Correa. 1ro De Agosto",
-        "telefono": "0992836492"
-    }
+    } 
 ]
