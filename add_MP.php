@@ -9,10 +9,13 @@
 </head>
 <body>
 <?php
+    include('nav.php');
+    ?>
+<?php
 
 if(isset($_POST['save'])){
     //open the json file
-    $data = file_get_contents('members.json');
+    $data = file_get_contents('members_MP.json');
     $data = json_decode($data, true);
 
     //data in out POST
@@ -33,7 +36,7 @@ if(isset($_POST['save'])){
     $data[] = $input;
     //encode back to json
     $data = json_encode($data, JSON_PRETTY_PRINT);
-    file_put_contents('members.json', $data);
+    file_put_contents('members_MP.json', $data);
 
     header('location: materiapirma.php');
     exit;
@@ -43,12 +46,12 @@ if(isset($_POST['save'])){
     <h1 class="page-header text-center">SISTEMA INVENTARIOS - Materia Prima</h1>
     <div class="row">
         <div class="col-1"></div>
-        <div class="col-8"><a class="btn btn-primary" href="index.php">Atras</a>
+        <div class="col-8"><a class="btn btn-primary" href="materiapirma.php">Atras</a>
         <form method="POST">
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Codigo</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="id" name="id"  >
+                    <input type="number" class="form-control" id="id" name="id"  >
                     <span id="error-id" style="color: red;"></span>
                 </div>
             </div>

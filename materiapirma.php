@@ -34,12 +34,12 @@ include('nav.php');
                     <th>Unidades</th>
                     <th>Proveedor</th>
                     <th>Precio</th>
-                    <th>Action</th>
+                    <th>Accion</th>
                 </thead>
                 <tbody>
                     <?php
                         //fetch data from json
-                        $data = file_get_contents('members.json');
+                        $data = file_get_contents('members_MP.json');
                         //decode into php array
                         $data_array = json_decode($data, true);
 
@@ -59,8 +59,7 @@ include('nav.php');
                                     <td>".$row['proveedor']."</td>
                                     <td>".$row['preciopro']."</td>
                                     <td>
-                                        <a href='edit_MP.php?index=".$index."' class='btn btn-success btn-sm'>Edit</a>
-                                        <a href='delete_MP.php?index=".$index."' class='btn btn-danger btn-sm'>Delete</a>
+                                        <a href='edit_MP.php?index=".$index."' class='btn btn-success btn-sm'>Editar</a>
                                     </td>
                                 </tr>
                             ";

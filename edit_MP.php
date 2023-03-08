@@ -10,7 +10,7 @@
 $index = $_GET['index'];
 
 //get json data
-$data = file_get_contents('members.json');
+$data = file_get_contents('members_MP.json');
 $data_array = json_decode($data, true);
 
 //assign the data to selected index
@@ -35,9 +35,9 @@ if(isset($_POST['save'])){
 
     //encode back to json
     $data = json_encode($data_array, JSON_PRETTY_PRINT);
-    file_put_contents('members.json', $data);
+    file_put_contents('members_MP.json', $data);
 
-    header('location: index.php');
+    header('location: materiapirma.php');
 }
 
 ?>
@@ -45,12 +45,12 @@ if(isset($_POST['save'])){
     <h1 class="page-header text-center">SISTEMA INVENTARIOS - Materia Prima</h1>
     <div class="row">
         <div class="col-1"></div>
-        <div class="col-8"><a class="btn btn-primary" href="index.php">Atras</a>
+        <div class="col-8"><a class="btn btn-primary" href="materiapirma.php">Atras</a>
         <form method="POST">
             <div class="mb-3 row">
                 <label class="col-sm-2 col-form-label">Codigo</label>
                 <div class="col-sm-10">
-                    <input type="text" class="form-control" id="id" name="id" value="<?php echo $row['id']; ?>">
+                    <input type="number" class="form-control" id="id" name="id" value="<?php echo $row['id']; ?>">
                     <span id="error-id" style="color: red;"></span>
                 </div>
             </div>
@@ -106,7 +106,7 @@ if(isset($_POST['save'])){
     <div class="col-sm-10">
         <select class="form-control" name="proveedor" id="proveedor">
             <?php
-                $proveedores = file_get_contents('proveedores.json');
+                $proveedores = file_get_contents('proveedor.json');
                 $proveedores = json_decode($proveedores, true);
                 foreach($proveedores as $proveedor) {
                     echo '<option value="' . $proveedor['nombre'] . '"';

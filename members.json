@@ -23,27 +23,29 @@
         "preciopro": "6.5"
     },
     {
-        "id": "640679b4c0648",
-        "nombpro": "sdgf",
-        "descpro": "fdgh",
-        "marcapro": "sdgfhgjkj",
-        "fechapro": "2023-03-11",
-        "cantpro": "45",
+        "id": "123",
+        "nombpro": "sal",
+        "descpro": "sacos de arina",
+        "marcapro": "cocinero",
+        "fechapro": "2023-03-18",
+        "cantpro": "123",
         "unipro": "kg",
-        "proveedor": "Carol Jacome",
-        "preciopro": "4853"
-    },
+        "proveedor": "moises2",
+        "preciopro": "123"
+    }
+    ,
     {
-        "id": "640679c7497a7",
-        "nombpro": "sdgf",
-        "descpro": "fdgh",
-        "marcapro": "sdgfhgjkj",
-        "fechapro": "2023-03-11",
-        "cantpro": "45",
+        "id": "123",
+        "nombpro": "azucar",
+        "descpro": "sacos de arina",
+        "marcapro": "cocinero",
+        "fechapro": "2023-03-18",
+        "cantpro": "123",
         "unipro": "kg",
-        "proveedor": "Steven Oviedo",
-        "preciopro": "4858"
-    },
+        "proveedor": "moises2",
+        "preciopro": "123"
+    }
+    ,
     {
         "id": "64067ab78472b",
         "nombpro": "sedr",

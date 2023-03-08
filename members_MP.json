@@ -1,0 +1,57 @@
+[
+    {
+        "id": "123",
+        "nombpro": "leche",
+        "descpro": "latas de algo",
+        "marcapro": "levita",
+        "fechapro": "2023-03-19",
+        "cantpro": "12312",
+        "unipro": "litros",
+        "proveedor": "moises5",
+        "preciopro": "12"
+    },
+    {
+        "id": "123",
+        "nombpro": "arina",
+        "descpro": "sacos de arina",
+        "marcapro": "cocinero",
+        "fechapro": "2023-03-18",
+        "cantpro": "123",
+        "unipro": "kg",
+        "proveedor": "moises2",
+        "preciopro": "123"
+    },
+    {
+        "id": "123",
+        "nombpro": "sal",
+        "descpro": "sacos de arina",
+        "marcapro": "cocinero",
+        "fechapro": "2023-03-18",
+        "cantpro": "123",
+        "unipro": "kg",
+        "proveedor": "moises2",
+        "preciopro": "123"
+    },
+    {
+        "id": "123",
+        "nombpro": "azucar",
+        "descpro": "sacos de arina",
+        "marcapro": "cocinero",
+        "fechapro": "2023-03-18",
+        "cantpro": "123",
+        "unipro": "kg",
+        "proveedor": "moises2",
+        "preciopro": "123"
+    },
+    {
+        "id": "123",
+        "nombpro": "levadura",
+        "descpro": "sacos de arina",
+        "marcapro": "cocinero",
+        "fechapro": "2023-03-18",
+        "cantpro": "123",
+        "unipro": "litros",
+        "proveedor": null,
+        "preciopro": "123"
+    }
+]
