@@ -1,20 +1,51 @@
-{
-    "0": {
-        "codigo": 1 ,
-        "nombre": "moises",
-        "numero": "R1",
-
-        "materiaprima":[
+[
+    {
+        "id": 1231,
+        "numero": "12",
+        "nombre": "rtgdfgdf",
+        "ingredientes": [
             {
-                "codigo": "traer",
-                "nombre": "traer",
-                "cantidad": "ingresar",
-                "unidades": "ingresar",
-                "costo": "traer",
-                "precioTotal": "calcular"                
+                "id": 345,
+                "nombreing": "harina",
+                "cantidad": 456,
+                "unidad": "kg",
+                "costo": 345
             }
-          ]
-        
+        ]
+    },
+    {
+        "id": 123,
+        "numero": "23",
+        "nombre": "3453",
+        "ingredientes": [
+            {
+                "id": 640679,
+                "nombreing": "sdgf",
+                "cantidad": 5654,
+                "unidad": "kg",
+                "costo": 640679
+            }
+        ]
+    },
+    {
+        "id": 1231,
+        "numero": "12",
+        "nombre": "prueba",
+        "ingredientes": [
+            {
+                "id": 345,
+                "nombreing": "harina",
+                "cantidad": 45,
+                "unidad": "kg",
+                "costo": 345
+            },
+            {
+                "id": 345,
+                "nombreing": "harina",
+                "cantidad": 78,
+                "unidad": "kg",
+                "costo": 345
+            }
+        ]
     }
-     
-}
+]

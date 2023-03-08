@@ -3,7 +3,7 @@
 $index = $_GET['index'];
 
 // fetch data from json
-$data = file_get_contents('productos.json');
+$data = file_get_contents('orden.json');
 $data = json_decode($data, true);
 
 // remove element with index and reindex
@@ -12,7 +12,7 @@ $data = array_values($data);
 
 // encode back to json
 $data = json_encode($data, JSON_PRETTY_PRINT);
-file_put_contents('productos.json', $data);
+file_put_contents('orden.json', $data);
 
-header('location: productos.php');
+header('location: OrdenP.php');
 ?>

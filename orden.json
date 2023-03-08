@@ -1,0 +1,116 @@
+[
+    {
+        "id": 324,
+        "numero": "45654",
+        "cliente": "Carol Jacome",
+        "recetas": [
+            {
+                "nombre": "Pasta",
+                "cantidad": 5,
+                "precio": 6
+            },
+            {
+                "nombre": "Lasagna",
+                "cantidad": 6,
+                "precio": 3
+            }
+        ]
+    },
+    {
+        "id": 245,
+        "numero": "76",
+        "cliente": "Angel Aguirre",
+        "recetas": [
+            {
+                "nombre": "Pasta",
+                "cantidad": 9,
+                "precio": 2
+            },
+            {
+                "nombre": "Pizza",
+                "cantidad": 4,
+                "precio": 5.5
+            }
+        ]
+    },
+    {
+        "id": 3456,
+        "numero": "46",
+        "cliente": "Carol Jacome",
+        "recetas": [
+            {
+                "nombre": "Pasta",
+                "cantidad": 6,
+                "precio": 5
+            },
+            {
+                "nombre": "Lasagna",
+                "cantidad": 4,
+                "precio": 5.55
+            }
+        ]
+    },
+    {
+        "id": 766,
+        "numero": "777",
+        "cliente": "moisesadcli",
+        "recetas": [
+            {
+                "nombre": "salsa|77",
+                "cantidad": 2,
+                "precio": 77
+            },
+            {
+                "nombre": "pizza|32",
+                "cantidad": 5,
+                "precio": 32
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "numero": "1",
+        "cliente": "moises",
+        "recetas": [
+            {
+                "nombre": "salsa|77",
+                "cantidad": 1,
+                "precio": 77
+            },
+            {
+                "nombre": "pizza|32",
+                "cantidad": 2,
+                "precio": 32
+            }
+        ]
+    },
+    {
+        "id": 757,
+        "numero": "757",
+        "cliente": "moises",
+        "recetas": [
+            {
+                "nombre": "salsa",
+                "cantidad": 1,
+                "precio": 77
+            },
+            {
+                "nombre": "pizza",
+                "cantidad": 2,
+                "precio": 32
+            }
+        ]
+    },
+    {
+        "id": 0,
+        "numero": "12",
+        "cliente": "moisesadcli",
+        "recetas": [
+            {
+                "nombre": "prueba",
+                "cantidad": 456,
+                "precio": 0
+            }
+        ]
+    }
+]
