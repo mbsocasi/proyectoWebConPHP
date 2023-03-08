@@ -34,6 +34,7 @@ include('nav.php');
                         $data_array = json_decode($data);
 
                         $index = 0;
+                        $totalfinalreporte = 0; 
                         foreach($data_array as $row){
                          echo "
         <tr>
@@ -51,7 +52,7 @@ include('nav.php');
                 <tbody>";
 
                 $totalfinal = 0; 
-                $totalfinalreporte = 0; 
+                
 
                 foreach ($row->recetas as $receta) {
                     echo "
@@ -66,8 +67,9 @@ include('nav.php');
                     </tr>
                 ";
                 $totalfinal +=  $total ; // sumar el precio de cada fila
-                $totalfinalreporte +=  $totalfinal ; 
+                
                 }
+                $totalfinalreporte +=  $totalfinal ; 
                 echo "
                             <tr>
                                 <td></td>
@@ -94,6 +96,13 @@ include('nav.php');
                             $index++;
                 
 }
+echo "<tr>
+
+
+<td colspan='4'class='text-end'><strong>Total:".$totalfinalreporte."</strong></td>
+
+    <td></td>
+    </tr>";
 
 
                     ?>
