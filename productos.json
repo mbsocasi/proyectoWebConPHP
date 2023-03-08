@@ -1,20 +1,56 @@
-{
-    "0": {
-        "codigo": 1 ,
-        "nombre": "moises",
-        "numero": "R1",
-
-        "materiaprima":[
+[
+    {
+        "id": 1231,
+        "numero": "4",
+        "recetas": [
             {
-                "codigo": "traer",
-                "nombre": "traer",
-                "cantidad": "ingresar",
-                "unidades": "ingresar",
-                "costo": "traer",
-                "precioTotal": "calcular"                
+                "nombre": "atun",
+                "cantidad": 0,
+                "precio": 123
             }
-          ]
-        
+        ]
+    },
+    {
+        "id": 1231,
+        "numero": "12",
+        "recetas": [
+            {
+                "nombre": "atun",
+                "cantidad": 0,
+                "precio": 123
+            }
+        ]
+    },
+    {
+        "id": 1231,
+        "numero": "23",
+        "recetas": [
+            {
+                "nombre": "atun",
+                "cantidad": 123,
+                "precio": 123
+            },
+            {
+                "nombre": "leche",
+                "cantidad": 456,
+                "precio": 1234
+            }
+        ]
+    },
+    {
+        "id": 1231,
+        "numero": "12",
+        "recetas": [
+            {
+                "nombre": "atun",
+                "cantidad": 123,
+                "precio": 123
+            },
+            {
+                "nombre": "leche",
+                "cantidad": 123,
+                "precio": 123
+            }
+        ]
     }
-     
-}
+]

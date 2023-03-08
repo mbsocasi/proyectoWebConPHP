@@ -1,57 +1,24 @@
 [
     {
-        "id": "555",
-        "nombpro": "Leche",
-        "descpro": "Leche Entera",
-        "marcapro": "VitaLeche",
-        "fechapro": "2023-03-24",
-        "cantpro": "2",
+        "id": "1",
+        "nombpro": "leche",
+        "descpro": "galones",
+        "marcapro": "levita",
+        "fechapro": "2023-03-19",
+        "cantpro": "123",
         "unipro": "litros",
-        "proveedor": "Carol Jacome",
-        "preciopro": "1.2"
+        "proveedor": "moises2",
+        "preciopro": "4.34"
     },
     {
-        "id": "6406799d55598",
-        "nombpro": "harina",
-        "descpro": "blanca",
-        "marcapro": "harinaya",
-        "fechapro": "2023-03-09",
-        "cantpro": "6",
-        "unipro": "kg",
-        "proveedor": "Carol Jacome",
-        "preciopro": "6.5"
-    },
-    {
-        "id": "640679b4c0648",
-        "nombpro": "sdgf",
-        "descpro": "fdgh",
-        "marcapro": "sdgfhgjkj",
-        "fechapro": "2023-03-11",
-        "cantpro": "45",
-        "unipro": "kg",
-        "proveedor": "Carol Jacome",
-        "preciopro": "4853"
-    },
-    {
-        "id": "640679c7497a7",
-        "nombpro": "sdgf",
-        "descpro": "fdgh",
-        "marcapro": "sdgfhgjkj",
-        "fechapro": "2023-03-11",
-        "cantpro": "45",
-        "unipro": "kg",
-        "proveedor": "Steven Oviedo",
-        "preciopro": "4858"
-    },
-    {
-        "id": "64067ab78472b",
-        "nombpro": "sedr",
-        "descpro": "fdh",
-        "marcapro": "ggh",
-        "fechapro": "2023-03-24",
-        "cantpro": "45",
-        "unipro": "libras",
-        "proveedor": "Carol Jacome",
-        "preciopro": "45"
+        "id": "1231",
+        "nombpro": "atun",
+        "descpro": "latas de algo",
+        "marcapro": "cocinero",
+        "fechapro": "2023-03-16",
+        "cantpro": "234",
+        "unipro": "unidades",
+        "proveedor": "moises2",
+        "preciopro": "4.90"
     }
 ]
