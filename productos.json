@@ -2,34 +2,6 @@
     {
         "id": 1231,
         "numero": "12",
-        "nombre": "rtgdfgdf",
-        "ingredientes": [
-            {
-                "id": 345,
-                "nombreing": "harina",
-                "cantidad": 456,
-                "unidad": "kg",
-                "costo": 345
-            }
-        ]
-    },
-    {
-        "id": 123,
-        "numero": "23",
-        "nombre": "3453",
-        "ingredientes": [
-            {
-                "id": 640679,
-                "nombreing": "sdgf",
-                "cantidad": 5654,
-                "unidad": "kg",
-                "costo": 640679
-            }
-        ]
-    },
-    {
-        "id": 1231,
-        "numero": "12",
         "nombre": "prueba",
         "ingredientes": [
             {
@@ -45,6 +17,27 @@
                 "cantidad": 78,
                 "unidad": "kg",
                 "costo": 345
+            }
+        ]
+    },
+    {
+        "id": 1231,
+        "numero": "23",
+        "nombre": "prueba",
+        "ingredientes": [
+            {
+                "id": 123,
+                "nombreing": "sal",
+                "cantidad": 45,
+                "unidad": "kg",
+                "costo": 123
+            },
+            {
+                "id": 64067,
+                "nombreing": "sedr",
+                "cantidad": 122,
+                "unidad": "libras",
+                "costo": 64067
             }
         ]
     }
