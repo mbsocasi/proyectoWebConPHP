@@ -34,7 +34,7 @@ include('nav.php');
                     <th>Unidades</th>
                     <th>Proveedor</th>
                     <th>Precio</th>
-                    <th>Action</th>
+                    <th>Accion</th>
                 </thead>
                 <tbody>
                     <?php
@@ -59,7 +59,7 @@ include('nav.php');
                                     <td>".$row['proveedor']."</td>
                                     <td>".$row['preciopro']."</td>
                                     <td>
-                                        <a href='edit_MP.php?index=".$index."' class='btn btn-success btn-sm'>Edit</a>
+                                        <a href='edit_MP.php?index=".$index."' class='btn btn-success btn-sm'>Editar</a>
                                     </td>
                                 </tr>
                             ";
